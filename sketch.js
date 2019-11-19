@@ -29,13 +29,13 @@ fix = loadFont('courbd.ttf')
 function setup() {
  createCanvas(980,500);
 background(10,200,200);
-print("year/attendance w headers", zoo.getColumnCount());
+print("year/attendance headers", zoo.getColumnCount());
 print("year numbers/ attendance numbers",zoo.getRowCount());
 
 //attendance
     yNum = print("look",zoo.get(1, 1));
 rat = (zoo.get(5,1)/10000) //2008 atten
-ox = (zoo.get(4,1)/100000)  //2009 atten
+ox = (zoo.get(4,1)/10000)  //2009 atten
 tiger = (zoo.get(3,1)/10000)  //2010 atten 
 rabbit = (zoo.get(2,1)/10000)  //2011 atten
 dragon = (zoo.get(1,1)/10000)  //2012 atten
@@ -62,7 +62,7 @@ function draw() {
       textFont(fix);
       textSize(30);
       fill(100,75,0);
-      text('1,459,080!',260,ox+5);
+      text('1,459,080!',200,ox- 50);
     }
     if(key == "3"){
       textFont(fix);
@@ -101,8 +101,8 @@ image(ox1,250,ox);
 textFont(fix);
 textSize(30);
 fill(100,75,0);
-text('ox 2009-2010',250,ox + 250);
-text('(2)',350,ox + 280);
+text('ox 2009-2010',230,ox + 280);
+text('(2)',330,ox + 310);
 pop();
 
 push();
@@ -121,7 +121,7 @@ image(rabbit1,730,rabbit);
 textFont(fix);
 textSize(30);
 fill(150,90,0);
-text('rabbit 2011-2012',720,rabbit + 280);
+text('rabbit 2011-2012',700,rabbit + 280);
 text('(4)',820,rabbit + 310);
 pop();
 
