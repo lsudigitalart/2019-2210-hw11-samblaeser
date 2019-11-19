@@ -33,7 +33,7 @@ print("year/attendance headers", zoo.getColumnCount());
 print("year numbers/ attendance numbers",zoo.getRowCount());
 
 //attendance
-    yNum = print("look",zoo.get(1, 1));
+    //yNum = print("look",zoo.get(1, 1));
 rat = (zoo.get(5,1)/10000) //2008 atten
 ox = (zoo.get(4,1)/10000)  //2009 atten
 tiger = (zoo.get(3,1)/10000)  //2010 atten 
